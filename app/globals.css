@@ -1,0 +1,73 @@
+@import url('https://fonts.cdnfonts.com/css/neue-helvetica-bq');
+@import url('https://fonts.cdnfonts.com/css/druk-text-wide-trial');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-cream text-ink-900 font-body antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display;
+  }
+
+  :focus-visible {
+    outline: 2px solid theme("colors.gold.500");
+    outline-offset: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  /* Signature element: a recurring gold arched-window line motif, evoking
+     the shape of a church window/doorway. Used at section transitions in
+     place of a generic wave or blob divider. */
+  .arch-motif {
+    position: relative;
+  }
+
+  .arch-motif::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: min(720px, 86vw);
+    height: 100%;
+    transform: translateX(-50%);
+    border: 1px solid theme("colors.gold.500" / 35%);
+    border-bottom: none;
+    border-radius: 999px 999px 0 0 / 220px 220px 0 0;
+    pointer-events: none;
+  }
+
+  .eyebrow {
+    @apply text-xs font-semibold uppercase tracking-widest2 text-gold-600;
+  }
+
+  .eyebrow-inverse {
+    @apply text-xs font-semibold uppercase tracking-widest2 text-gold-300;
+  }
+}
