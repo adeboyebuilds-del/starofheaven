@@ -33,6 +33,7 @@ export default function Ministries() {
                   description={m.image.description}
                   aspect="aspect-[4/3]"
                   className="w-full"
+                  src={m.image.source}
                 />
 
                 {/* Dark Gradient Overlay for text readability */}

@@ -10,6 +10,7 @@ export default function RootedInFaith() {
         <ImagePlaceholder
           description="Placeholder: portrait-orientation photo of the congregation praying together, heads bowed, unified moment of worship."
           aspect="aspect-[3/4]"
+          src="/images/rooted1.jpg"
         />
       </div>
 
@@ -39,6 +40,7 @@ export default function RootedInFaith() {
         <ImagePlaceholder
           description="Placeholder: portrait-orientation photo of the congregation praying together, heads bowed, unified moment of worship."
           aspect="aspect-[3/4]"
+          src="/images/rooted2.jpg"
         />
       </div>
 

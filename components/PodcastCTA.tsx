@@ -29,7 +29,8 @@ export default function PodcastCTA() {
         </div>
         <ImagePlaceholder
           description="Placeholder: photo of a podcast microphone / recording setup, or the pastor recording in-studio, moody navy-toned lighting with a gold rim light."
-          aspect="aspect-[4/3]"
+          aspect="aspect-[5/3]"
+          src="/images/podcast.png"
         />
       </div>
     </section>

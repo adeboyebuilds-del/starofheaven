@@ -1,30 +1,33 @@
+import Image, { StaticImageData } from "next/image";
+
+// You might want to rename this to CustomImage or AppImage!
 type ImagePlaceholderProps = {
+  src: string | StaticImageData;
   description: string;
   aspect?: string;
   className?: string;
+  priority?: boolean; // Added in case you render this above the fold
 };
 
-/**
- * Stand-in for a real photo. Drop in a Next.js <Image> once real
- * photography is available — the `description` text documents exactly
- * what should be shot/sourced for this slot.
- */
 export default function ImagePlaceholder({
+  src,
   description,
   aspect = "aspect-[4/5]",
   className = "",
+  priority = false,
 }: ImagePlaceholderProps) {
   return (
     <div
-      role="img"
-      aria-label={description}
-      className={`relative flex ${aspect} w-full items-center justify-center overflow-hidden rounded-sm border border-gold-500/30 bg-navy-900 ${className}`}
+      className={`relative flex w-full items-center justify-center overflow-hidden rounded-sm bg-navy-900 ${aspect} ${className}`}
     >
-      <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(201,162,39,0.18)_0%,rgba(10,23,48,0)_55%)]" />
-      <div className="absolute inset-3 rounded-sm border border-dashed border-gold-400/40" />
-      <p className="relative mx-8 text-center font-body text-xs leading-relaxed tracking-wide text-gold-200">
-        {description}
-      </p>
+      <Image
+        src={src}
+        alt={description}
+        fill
+        priority={priority}
+        className="object-cover"
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+      />
     </div>
   );
 }

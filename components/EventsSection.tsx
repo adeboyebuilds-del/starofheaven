@@ -44,7 +44,7 @@ export default function EventsSection() {
                 className="group relative rounded-2xl border border-transparent p-4 transition-all duration-300 hover:border-white/40 hover:bg-navy-900/40"
               >
                 <div className="relative overflow-hidden rounded-xl">
-                  <ImagePlaceholder description={event.image.description} aspect="aspect-[4/3]" />
+                  <ImagePlaceholder description={event.image.description} src={event.image.source} aspect="aspect-[4/3]" />
                   
                   {/* Date Badge */}
                   <div className="absolute left-4 top-4 rounded-sm bg-cream px-3 py-2 text-center leading-none shadow-sm">

@@ -40,6 +40,7 @@ export default function EngageSteps() {
                 <ImagePlaceholder 
                   description={step.image.description} 
                   aspect="aspect-[3/4]" 
+                  src={step.image.source}
                 />
                 
                 {/* Dark gradient overlay to make text readable over the image */}

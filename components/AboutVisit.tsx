@@ -9,7 +9,7 @@ export default function AboutVisit() {
       <div className="mx-auto max-w-4xl px-6 py-20 text-center md:py-28">
         {/* Who We Are */}
         <div className="flex flex-col items-center">
-          <h1 className="eyebrow-inverse mb-3">About Us</h1>
+           <h1 className="select-none font-display text-5xl sm:text-5xl md:text-[100px] font-extrabold uppercase tracking-widest text-[#162030] pointer-events-none z-0">About Us</h1>
           <h2 className="font-display text-5xl font-medium sm:text-6xl uppercase">
             Who We Are
           </h2>

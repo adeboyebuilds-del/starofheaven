@@ -6,7 +6,7 @@ import ImagePlaceholder from "@/components/ImagePlaceholder";
 import { ArrowRightIcon } from "@/components/icons";
 import { featureRows } from "@/lib/data";
 
-const SLIDE_DURATION = 24000; // ms each row stays on screen
+const SLIDE_DURATION = 6000; // ms each row stays on screen
 
 export default function FeatureCarousel() {
   const [index, setIndex] = useState(0);
@@ -19,7 +19,7 @@ export default function FeatureCarousel() {
   }, []);
 
   return (
-    <section className="relative rounded-2xl overflow-hidden bg-navy-950/90 text-cream -mt-20 w-[90%] lg:w-[95%] mx-auto">
+    <section className="relative z-10 rounded-2xl overflow-hidden bg-navy-950/90 text-cream -mt-20 w-[90%] lg:w-[95%] mx-auto">
       <div className="mx-auto max-w-8xl px-6 py-4 md:py-4">
         <div className="grid items-center gap-10 md:grid-cols-[2fr_1fr] md:gap-16 rounded-xl">
           {/* Text stack */}
@@ -83,7 +83,7 @@ export default function FeatureCarousel() {
                     : "absolute inset-0 opacity-0 transition-opacity duration-700"
                 }
               >
-                <ImagePlaceholder description={row.image.description} aspect="aspect-[4/3]" />
+                <ImagePlaceholder description={row.image.description} aspect="aspect-[5/3]" src={row.image.source}/>
               </div>
             ))}
           </div>
