@@ -99,7 +99,7 @@ export const nextSteps = [
     body: "Publicly declare your faith and new life in Christ through water baptism.",
     icon: FaCalendarCheck,
     image: { description: "Placeholder: Baptism celebration moment." ,
-      source: "/images/engage4.jpg",}
+      source: "/images/baptize.png",}
   }
 ];
 export const events = [
