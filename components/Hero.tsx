@@ -16,11 +16,11 @@ const iconMap = {
 
 // Define your carousel background images here or import them from site data
 const carouselImages = [
-  "/images/image1.jpg",
-  "/images/image6.jpg",
+  "/images/image10.jpg",
+  "/images/image11.jpg",
   "/images/image3.jpg",
   "/images/image7.jpg",
-  "/images/image8.jpg",
+  "/images/image14.jpg",
 ];
 
 export default function Hero() {

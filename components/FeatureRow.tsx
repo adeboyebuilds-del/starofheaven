@@ -83,7 +83,7 @@ export default function FeatureCarousel() {
                     : "absolute inset-0 opacity-0 transition-opacity duration-700"
                 }
               >
-                <ImagePlaceholder description={row.image.description} aspect="aspect-[5/3]" src={row.image.source}/>
+                <ImagePlaceholder description={row.image.description} aspect="aspect-[5/3]" src={row.image.source} className="rounded-xl"/>
               </div>
             ))}
           </div>
