@@ -37,7 +37,7 @@ export const featureRows = [
       alt: "Pastor delivering a sermon on stage under warm stage lighting",
       description:
         "Placeholder: wide photo of the pastor mid-message on the main stage, warm gold stage lighting, congregation visible in soft focus foreground.",
-        source:"/images/preaching.png",
+        source:"/images/image13.jpg",
     },
     imageSide: "right" as const,
   },
@@ -50,7 +50,7 @@ export const featureRows = [
       alt: "Small group of church members talking and laughing together",
       description:
         "Placeholder: candid photo of a small group / community circle gathered in a lobby or living room, genuine conversation, mixed ages.",
-        source:"/images/lobby.png",
+        source:"/images/community.png",
     },
     imageSide: "left" as const,
   },
@@ -77,7 +77,7 @@ export const nextSteps = [
     
     image: { 
       description: "Placeholder: Person praying or responding to ministry.",
-      source: "/images/engage1.png",
+      source: "/images/engage1.jpg",
      }
   },
   {
@@ -85,14 +85,14 @@ export const nextSteps = [
     body: "Connect authentically and grow together in a community tailored for you.",
     icon: FaUsers,
     image: { description: "Placeholder: Small group sharing circles." ,
-      source: "/images/engage9.png",}
+      source: "/images/engage3.png",}
   },
   {
     title: "Serve",
     body: "Use your unique gifts to make an impact in the house and the community.",
     icon: FaHeart,
     image: { description: "Placeholder: Volunteers serving with joy." ,
-      source: "/images/engage.png",}
+      source: "/images/engage.jpg",}
   },
   {
     title: "Get Baptized",
@@ -105,20 +105,20 @@ export const nextSteps = [
 export const events = [
   {
     date: { month: "JUL", day: "12" },
-    title: "Community Groups Kickoff",
+    title: "The Couples Lounge",
     time: "July 12 – Aug 22, 2026",
     location: "Online & In Person",
     image: {
       description:
         "Placeholder: photo of a community group session, people seated in a circle mid-discussion.",
-        source:"/images/event1.png"
+        source:"/images/engage.png"
     },
   },
   {
     date: { month: "AUG", day: "09" },
-    title: "Joy Service",
+    title: "Hope on the Streets",
     time: "9:00 AM",
-    location: "Main Sanctuary",
+    location: "Under the Bridge",
     image: {
       description:
         "Placeholder: photo of joyful worship — hands raised, bright stage lighting, full congregation.",
@@ -127,7 +127,7 @@ export const events = [
   },
   {
     date: { month: "AUG", day: "16" },
-    title: "Back to School Drive",
+    title: "Daughters of the King",
     time: "9:00 AM",
     location: "Main Sanctuary",
     image: {
@@ -140,7 +140,7 @@ export const events = [
 
 export const ministries = [
   {
-    title: "Kids Ministry",
+    title: "The Sidewalk Fellowship",
     href: "/ministries/kids",
     image: {
       description:
@@ -149,7 +149,7 @@ export const ministries = [
     },
   },
   {
-    title: "Youth",
+    title: "Beyond the Walls",
     href: "/ministries/youth",
     image: {
       description:
@@ -167,7 +167,7 @@ export const ministries = [
     },
   },
   {
-    title: "School of Ministry",
+    title: "Hope Under the Bridge (PTI)",
     href: "/ministries/school-of-ministry",
     image: {
       description:
