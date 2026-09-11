@@ -23,7 +23,7 @@ export default function RootedInFaith() {
           <span className="sm:whitespace-nowrap">Reaching the World.</span>
         </h2>
         
-        <p className="mt-5 text-2xl sm:text-[30px] font-medium leading-snug sm:leading-[45px] text-navy-900/80">
+        <p className="mt-5 text-2xl sm:text-[30px] font-medium leading-snug sm:leading-[45px] text-gold-500">
           Be Here.
         </p>
         
