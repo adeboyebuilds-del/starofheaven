@@ -14,17 +14,16 @@ export default function AboutVisit() {
             Who We Are
           </h2>
           <p className="mt-6 max-w-5xl leading-[30px] text-cream/75 text-[30px]">
-            At {site.name}, we help people discover purpose, experience
-            God&rsquo;s love, and impact the world.
+            At {site.name}, we help people experience
+            God&rsquo;s love, change their world and discover their purpose.
           </p>
           <p className="mt-6 max-w-5xl text-[30px] leading-[30px] text-cream/75">
             Led by Pastor <span className="text-cream">OluwaSoji Williams</span>
-            , we&rsquo;re an intergenerational, Christ-centered community
-            committed to uplifting humanity, meeting people at every stage of
-            life and equipping them to evolve with purpose and power.
+            , we&rsquo;re Jesus centered, reaching out to the community, positively impacting people at every stage of life
+            and helping them to discover what God has ordained them to be. 
           </p>
           <p className="mt-4 max-w-2xl font-body text-[30px] text-gold-300">
-            You belong here.
+            Be Part of us.
           </p>
         </div>
 
